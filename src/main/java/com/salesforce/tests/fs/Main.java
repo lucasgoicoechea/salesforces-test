@@ -48,7 +48,7 @@ public class Main {
      * input
      * @throws Exception 
      */
-    public static void main(String[] strings) throws Exception {
+    public static void main(String[] strings) {
       
         Scanner sc = new Scanner(System.in);
         String input;
