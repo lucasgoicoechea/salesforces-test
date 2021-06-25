@@ -48,8 +48,10 @@ public class Main {
      * input
      * @throws Exception 
      */
-    public static void main(String[] strings) {
-      
+    public static void main(String[] strings)  {
+    	//for initialize DirectoryTree
+        Main main = new Main();
+        
         Scanner sc = new Scanner(System.in);
         String input;
 
