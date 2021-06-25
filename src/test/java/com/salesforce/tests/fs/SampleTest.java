@@ -10,7 +10,7 @@ import java.io.IOException;
 public class SampleTest extends BaseTest {
 
     @Test
-    public void testPwd() throws IOException {
+    public void testPwd() throws Exception {
         String[] expectedResults = {
                 "/root\n"
         };

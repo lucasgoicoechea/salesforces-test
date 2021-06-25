@@ -13,7 +13,7 @@ public class HiddenTest extends BaseTest {
 
 
     @Test
-    public void testCd() throws IOException {
+    public void testCd() throws Exception {
         String[] expectedResults = {
                 "Directory not found\n"
         };
@@ -21,7 +21,7 @@ public class HiddenTest extends BaseTest {
     }
 
     @Test
-    public void testMkdirAndCd() throws IOException {
+    public void testMkdirAndCd() throws Exception {
         String[] expectedResults = {
                 "Directory already exists\n",
                 "/root/abc\n"
@@ -30,7 +30,7 @@ public class HiddenTest extends BaseTest {
     }
 
     @Test
-    public void testLsSimple() {
+    public void testLsSimple() throws Exception {
         String[] expectedResults = {
                 "/root\n",
                 "file1\n",
@@ -39,7 +39,7 @@ public class HiddenTest extends BaseTest {
     }
 
     @Test
-    public void testLsMultiLevel() {
+    public void testLsMultiLevel() throws Exception {
         String[] expectedResults = {
                 "/root\n",
                 "root-file\n",
@@ -63,7 +63,7 @@ public class HiddenTest extends BaseTest {
 
 
     @Test
-    public void testCommandErrors() {
+    public void testCommandErrors() throws Exception {
         String[] expectedResults = {
                 "Unrecognized command\n",
                 "Invalid Command\n",
@@ -74,7 +74,7 @@ public class HiddenTest extends BaseTest {
     }
 
     @Test
-    public void testPathNameTooLong() {
+    public void testPathNameTooLong() throws Exception {
         String[] expectedResults = {
                 "Invalid File or Folder Name\n",
                 "Invalid File or Folder Name\n"
